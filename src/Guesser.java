@@ -11,19 +11,13 @@ public class Guesser{
     private int low;
     private int high;
 
-    /*
-     * Task 1. Write code here for a constructor
-     * which takes two int arguments and saves
-     * them in the instance variables low and high.
-     *
-     * If you don't remember the syntax for how to write
-     * constructors, revisit the chapter "Classes"
-     * and review the section about constructors.
-     *
-     */
-
-    // Write the constructor below this line.
-
+    public Guesser(int low, int high){
+        if(low >= high){
+            throw new IllegalArgumentException("The first argument must be lower than the second!");
+        }
+        this.low = low;
+        this.high = high;
+    }
 
     /*
      * Task 2. Complete the start() method, so that
