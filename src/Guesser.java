@@ -1,20 +1,13 @@
 import java.io.Console;
 import java.util.Scanner;
 
-/**
- * Assignment 1 - Guessing Game
- *
- * Here's the unfinished source code
- * for the Guesser class. It is your
- * task to complete the missing parts.
- */
 public class Guesser{
     private int low;
     private int high;
 
     public Guesser(int low, int high){
         if(low >= high){
-            throw new IllegalArgumentException("The first argument must be lower than the second!");
+            throw new IllegalArgumentException("The first number must be lower than the second!");
         }
         this.low = low;
         this.high = high;
